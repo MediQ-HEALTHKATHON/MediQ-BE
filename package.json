@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
+  "_moduleAliases": {
+      "@": "src",
+      "@config": "src/config",
+      "@errors": "src/errors",
+      "@middlewares": "src/middlewares",
+      "@modules": "src/modules",
+      "@models": "models/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon ./src/main.js",
@@ -22,6 +30,7 @@
     "express-validator": "^7.3.0",
     "helmet": "^8.1.0",
     "jsonwebtoken": "^9.0.2",
+    "module-alias": "^2.2.3",
     "pg": "^8.16.3",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.37.7"
